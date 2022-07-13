@@ -1,0 +1,108 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.show{
+    display: flex;
+}
+.hide{
+    display: none;
+}
+
+#shopping-cart-container{
+    padding: 0 25px;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid #0000002a;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 0px #0000002a;
+}
+#shopping-cart-container > .item{
+    margin-bottom: 10px;
+}
+#shopping-cart-container > .item > .title, #shopping-cart-container > .item > .price{
+    font-size: 18px;
+    font-weight: 500;
+}
+#shopping-cart-container > .item > .qyt, #shopping-cart-container > .item > .subtotal{
+    font-size: 15px;
+    font-weight: 500;
+}
+.addOne, .removeOne{
+    width: 25px;
+    height: 25px;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #ffbd5a;
+    border: none;
+    cursor: pointer;
+}
+.total{
+    font-size: 20px;
+    font-weight: 700;
+}
+.bClose, #bPurchase{
+    margin: 15px 0;
+    padding: 7px 12px;
+    font-size: 12px;
+    font-weight: 700;
+    background-color: #ffbd5a;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+
+
+#store-container{
+    margin-top: 50px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+#store-container > .item{
+    padding: 20px 25px;
+    margin: 25px;
+    min-width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0000002a;
+    border-radius: 15px;
+    box-shadow: 10px 10px 10px 0px #0000002a;
+    }
+    #store-container > .item > .title{
+        margin-bottom: 5px;
+        font-size: 22px;
+        font-weight: 500;
+    }
+    #store-container > .item > .price{
+        margin-bottom: 5px;
+        font-size: 22px;
+        font-weight: 700;
+    }
+    #store-container > .item > .qty{
+        margin-bottom: 5px;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    #store-container > .item > .actions > .add{
+        padding: 7px 12px;
+        font-size: 12px;
+        font-weight: 700;
+        background-color: #ffbd5a;
+        border-radius: 12px;
+        border: none;
+        cursor: pointer;
+    }
